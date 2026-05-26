@@ -83,6 +83,30 @@ Edit **`TARGET.md`** before cloning:
 - **Scope** — what's in/out of scope
 - **Customization plans** — modifications to apply after the base clone
 
+## Moje zmiany
+
+W ramach nauki dodałem do projektu stronę **„Moje produkty"** w panelu użytkownika. Oto co zostało zaimplementowane:
+
+### Dropdown przy ikonie użytkownika
+Po zalogowaniu kliknięcie awatara w prawym górnym rogu nawigacji otwiera menu z linkami do „Moje produkty", „Moje konto" oraz przyciskiem wylogowania. Menu zamyka się po kliknięciu poza nim lub naciśnięciu klawisza Escape.
+
+### Strona „Moje produkty" (`/account/my-products`)
+Strona dostępna tylko dla zalogowanych użytkowników. Wyświetla produkty sprzedawcy jako siatkę kafelków (3 kolumny na desktopie). Każdy kafelek zawiera:
+- zdjęcie produktu z efektem powiększenia po najechaniu,
+- nazwę i cenę,
+- pasek postępu i wynik **Siły oferty** w skali 1–100 z etykietą: **Słaba** (0–39), **Przeciętna** (40–69) lub **Mocna** (70–100).
+
+### Tryb edycji produktu
+Kliknięcie przycisku „Dowiedz się więcej" otwiera wysuwany panel z prawej strony ekranu. Panel składa się z dwóch kolumn:
+- **Formularz** — edycja nazwy, ceny, kategorii, opisu, tagów, wymiarów i wariantów rozmiarów,
+- **Prognoza parametrów live** — panel po prawej stronie aktualizuje wynik na bieżąco podczas wypełniania formularza i pokazuje, ile punktów można jeszcze zdobyć za uzupełnienie każdego pola.
+
+### Zapisywanie zmian
+Przycisk „Zapisz zmiany" aktualizuje dane produktu (nazwa, cena, zdjęcia, siła oferty) bezpośrednio na kafelkach. Po zapisaniu pojawia się toast notification „Zmiany zostały zapisane!" widoczny przez 3 sekundy.
+
+### Popup przy dodawaniu zdjęć
+Kliknięcie przycisku „+" przy zdjęciach otwiera modal z komunikatem „Funkcjonalność niebawem dostępna". Jednocześnie do produktu automatycznie doliczane jest +20 punktów do siły oferty, tak jakby zdjęcie zostało faktycznie dodane.
+
 ## License
 
 MIT
