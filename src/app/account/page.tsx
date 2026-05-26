@@ -39,6 +39,30 @@ export default function AccountPage() {
         Welcome back to your FashionHero account.
       </p>
 
+      {/* My Products */}
+      <section className="mb-10">
+        <div className="flex items-center justify-between mb-4 pb-2 border-b border-black/10">
+          <h2 className="text-[12px] font-medium uppercase tracking-[0.8px] text-charcoal">
+            Moje produkty
+          </h2>
+          <Link
+            href="/account/my-products"
+            className="text-[11px] text-warm-gray underline hover:text-charcoal transition-colors"
+          >
+            Zobacz wszystkie
+          </Link>
+        </div>
+        <p className="text-[13px] text-charcoal/70">
+          Zarządzaj swoimi wystawionymi produktami i śledź sprzedaż.
+        </p>
+        <Link
+          href="/account/my-products"
+          className="inline-block mt-3 text-[12px] font-medium text-charcoal border border-charcoal/30 px-4 py-2 hover:border-charcoal transition-colors"
+        >
+          Przejdź do moich produktów →
+        </Link>
+      </section>
+
       {/* Order History */}
       <section className="mb-10">
         <h2 className="text-[12px] font-medium uppercase tracking-[0.8px] text-charcoal mb-4 pb-2 border-b border-black/10">
